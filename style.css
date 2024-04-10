@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Indie Flower',
+    cursive;
+}
+
+@keyframes shake{
+    0%{transform: translateX(-10px);}
+    10%{transform: translateX(10px);}
+    15%{transform: translateX(-8px);}
+    20% {
+        transform: translateX(8px);
+    }
+    22% {
+        transform: translateX(-4px);
+    }
+    24% {
+        transform: translateX(4px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(16, 255, 16);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h1 span{
+    color: orange;
+}
+
+h2{
+    letter-spacing: 2px;
+}
+.container{
+    background-color: black;
+    background-image: url('./img/background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.menu-square h1{
+    text-align: center;
+
+}
+
+.options{
+    background-color: rgb(131, 131, 131);
+    max-width: 700px;
+    min-height: 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.start-box {
+    position: relative;
+    max-height: 400px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(124, 126, 124, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.box {
+    cursor: pointer;
+    padding: 20px;
+    background-image: url('img/bg_box.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 10px auto; 
+    border: none;
+}
+
+
+
+.button{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(225, 241, 0);
+    color: rgb(226, 224, 224);
+    font-family: 'Indie Flower',
+    cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color:rgb(90, 143, 4);
+    border: white 2px solid;
+}
+.reload-btn{
+    height: 40px;
+    border: 2px solid rgb(19, 19, 19);
+    color: rgb(85, 85, 85);
+    background-color: transparent;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out,
+    border .3s ease-in-out,
+    color .2s ease-in-out;
+}
+
+.reload-btn:hover{
+    background-color:rgb(90, 143, 4);
+    color: white;
+    border: white 2px solid;
+
+    
+}
+
+.menu-btn{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(19, 19, 19);
+    color: rgb(85, 85, 85);
+    font-family: 'Indie Flower',
+    cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+    line-height: 35px;
+}
+
+.menu-btn:hover {
+    background-color:rgb(90, 143, 4);
+    color: white;
+    border: white 2px solid;
+}
+
+.garapon {
+    width: 90px;
+    height: 190px;
+    background-image: url('img/garapon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.candy {
+    height: 50px; 
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.candy-max {
+    background-image: url('img/max.png'); 
+}
+.candy-fresh {
+    background-image: url('img/fresh.png');
+}
+
+.candy-nips {
+    background-image: url('img/nips.png');
+}
+
+.candy-snowbear {
+    background-image: url('img/snowbear.png');
+}
+
+.candy-lollipop {
+    background-image: url('img/lollipop.png');}
+
+.candy-rainbow_lollipop {
+    background-image: url('img/rainbow_lollipop.png');}
+
+.candy-dynamite {
+    background-image: url('img/dynamite.png');}
+
+.candy-mentos {
+    background-image: url('img/mentos.png');}
+
+
+.candy-active{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.candy-error{
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+.body-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-box{
+    position: relative;
+    max-height: 400px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(238, 18, 18, 0.75);
+}
