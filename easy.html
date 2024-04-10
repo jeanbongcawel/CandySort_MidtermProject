@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Sort</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span>C</span>andy <span>S</span>ort</h1>
+        <div class="menu-square">
+        </div>
+        <div class="game-square">
+            <div class="box">
+                <div class="garapon">
+                    <div title="fresh" class="candy candy-fresh"></div>
+                    <div title="max" class="candy candy-max"></div>
+                    <div title="fresh" class="candy candy-fresh"></div>
+                </div>
+
+                <div class="garapon">
+                    <div title="nips" class="candy candy-nips"></div>
+                    <div title="max" class="candy candy-max"></div>
+                    <div title="nips" class="candy candy-nips"></div>
+                </div>
+
+                <div class="garapon">
+                    <div title="max" class="candy candy-max"></div>
+                    <div title="fresh" class="candy candy-fresh"></div>
+                    <div title="nips" class="candy candy-nips"></div>
+                </div>
+
+                <div class="garapon"></div>
+            </div> 
+        </div>
+        <div class="options">
+            <a class="menu-btn" href="index.html" title="Back to menu" onclick="playClickSound(event)">Menu</a>
+            <button class="reload-btn" title="Reset">Undo</button>
+        </div>
+    </div>
+    <div class="body-overlay">
+        <div class="win-box">
+            <h2>Well done! You've completed the level! 🎉🎉</h2>  
+            <a class="menu-btn" href="medium.html" title="Next level" onclick="playClickSound(event)">Next level</a>
+            <a class="menu-btn" href="easy.html" title="Play again" onclick="playClickSound(event)"> Play again</a>
+            <a class="menu-btn" href="index.html" title="Back to menu" onclick="playClickSound(event)">Menu</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
